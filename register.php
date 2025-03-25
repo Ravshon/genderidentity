@@ -11,7 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user_id = $pdo->lastInsertId();
         header("Location: test.php?user_id=$user_id");
         exit();
-    } else {
+    } 
+    
+    else {
         echo "Iltimos, ismingizni va familiyangizni kiriting!";
     }
 }
