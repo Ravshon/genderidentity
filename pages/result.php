@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require '../config/db.php';
 
 if (!isset($_GET['user_id'])) {
     die("Ошибка: пользователь не найден.");
@@ -92,8 +92,8 @@ $data = json_encode([$bio_percent, $psy_percent, $soc_percent]);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test javoblari</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <script src="../assets/chart.js"></script>
     <style>
         body {
             background-color: #f8f9fa;
@@ -127,7 +127,7 @@ $data = json_encode([$bio_percent, $psy_percent, $soc_percent]);
         <p><?= $recommendations ?></p>
     </div>
 
-    <a href="index.html" class="btn btn-primary mt-3">Asosiy Sahifaga qaytish</a>
+    <a href="../index.html" class="btn btn-primary mt-3">Asosiy Sahifaga qaytish</a>
 </div>
 
 <script>
@@ -148,6 +148,6 @@ $data = json_encode([$bio_percent, $psy_percent, $soc_percent]);
     });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>

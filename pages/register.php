@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    require 'db.php';
+    require '../config/db.php';
 
     $first_name = trim($_POST['first_name']);
     $last_name = trim($_POST['last_name']);
