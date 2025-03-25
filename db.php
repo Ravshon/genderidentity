@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'gender_identity';
 $username = 'root'; // Username
-$password = ''; // Password
+$password = ''; // Parol
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
